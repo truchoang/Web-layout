@@ -1,0 +1,155 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Layout</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        /* table {
+            border-collapse: collapse;
+        }*/
+
+        footer {
+            width: 100%;
+            clear: both;
+            background-color: #888888;
+            height: 50px;
+        }
+
+        .upcase {
+            text-transform: uppercase;
+        }
+
+        .darkgray {
+            background-color: dimgray;
+            color: white;
+        }
+
+        .width {
+            padding: 20px;
+        }
+
+        .list>li {
+            margin-bottom: 15px;
+            font-size: 16px;
+
+        }
+
+        .OV>td {
+            background-color: #d8d8d8;
+            height: 200px;
+            width: 20%;
+            text-align: center;
+            vertical-align: bottom;
+            padding: 10px;
+            border: 2px solid#999999;
+        }
+
+        .menu {
+            border-spacing: 30px;
+            width: 100%;
+            padding: 30px;
+        }
+
+        .font {
+            font-size: 12px;
+            color: white;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- layout lớn: 3 dòng 1 cột-->
+    <thead>
+    <th style="width: 100%">
+
+        <center class="upcase darkgray width" ; style="font-size: 30px; font-weight: 500">
+            thomann.de
+        </center>
+    </th>
+    </thead>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <table style="height: 100%; width: 100%;">
+        <!--2 cot-->
+        <tr>
+            <td style="background-color: #d8d8d8; width: 25%; vertical-align: top;">
+                <!--vertical-align: chỉnh menu nằm ở phần nào-->
+                <div>
+                    <h2>Instruments</h2>
+
+                    <ul class="list">
+                        <li>Guitars and Basses</li>
+                        <li><a href="">Drums</a></li>
+                        <li><a href="">Keys</a></li>
+                        <li><a href="">Studio</a></li>
+                        <li><a href="">Software</a></li>
+                        <li><a href="">PA</a></li>
+                        <li><a href="">Lighting</a></li>
+                        <li><a href="">DJ</a></li>
+                        <li><a href="">Microphones</a></li>
+                        <li><a href="">Effect and Signal Processors</a></li>
+                        <li style="font-weight: 500">Brass</a></li>
+                        <li><a href="">Traditional</a></li>
+                        <li><a href="">Sheet</a></li>
+                        <li><a href="">Cases</a></li>
+                        <li><a href="">Cable</a></li>
+                    </ul>
+                </div>
+            </td>
+
+            <td style="width: 75%">
+                <!-- 4 dòng 4 cột-->
+                <table class="menu" style="height: 100%">
+
+                    <tr class="OV">
+                        <td>Saxophones</td>
+                        <td>Trumpets</td>
+                        <td>Clarinets</td>
+                        <td>Flugelhorns</td>
+                    </tr>
+
+                    <tr class="OV">
+                        <td>French Horns</td>
+                        <td>Trombones</td>
+                        <td>Baritones</td>
+                        <td>Alto-/​Bari­tone Horns</td>
+                    </tr>
+
+                    <tr class="OV">
+                        <td>Euphoniums</td>
+                        <td>Oboes</td>
+                        <td>Bassoons</td>
+                        <td>Tubas</td>
+                    </tr>
+
+                    <tr class="OV">
+                        <td>Flutes</td>
+                        <td>Recorders</td>
+                        <td>Harmonicas</td>
+                        <td>Molodicas</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <footer class="font">
+        <tr>
+        <td style="vertical-align: middle; text-align: left;width: 25%">
+            © 1996–2019 Thomann GmbH
+        </td>
+        <td style="vertical-align: middle; text-align: right ;width: 75%"> em không làm được chỗ này</td>
+    </tr>
+    </footer>
+
+</body>
+
+</html>
